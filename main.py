@@ -1,9 +1,8 @@
 from flask import Flask, jsonify, request
 import numpy as np
 import joblib
-from keras import models
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
+from sklearn.linear_model import LinearRegression
+from sklearn.multioutput import MultiOutputRegressor
 from utils import getAllDataPerYear
 from sklearn.model_selection import train_test_split
 
@@ -11,28 +10,39 @@ app = Flask(__name__)
 
 @app.route('/predict', methods=['GET'])
 def predict():
-    annee = int(request.args.get('annee', 2025))
+    annee_courante = int(request.args.get('annee', 2025))
+    annees = np.array([[annee_courante + i] for i in range(1, 4)])
 
-    model = models.load_model('model.h5')
+    model = joblib.load(r'model.h5')
 
-    # Préparer les données d'entrée
-    input_data = np.array([[annee]])
+    # Effectuer les prédictions
+    predictions = model.predict(annees)
 
-    # Effectuer la prédiction
-    prediction = model.predict(input_data)
+    result = []
+    for i, prediction in enumerate(predictions):
+        result.append({
+            'annee': annee_courante + i + 1,
+            'point_bourse': round(float(prediction[0]), 2),
+            'taux_chomage': round(float(prediction[1]), 2),
+            'nombre_jour_pic_particules_fines': round(float(prediction[2]), 2),
+            'participation_tour2': round(float(prediction[3]), 2)
+        })
 
-    return jsonify({
-        'point_bourse': float(prediction[0][0]),
-        'taux_chomage': float(prediction[0][1])
-    })
+    return jsonify(result)
+
 @app.route('/train', methods=['GET'])
 def train_model():
     merged_data = getAllDataPerYear()
 
-    return merged_data
-
     X = np.array([[item['annee']] for item in merged_data])
-    y = np.array([[item['point_bourse'], item['taux_chomage']] for item in merged_data])
+    y = np.array([
+        [
+            item.get('point_bourse') or -1,
+            item.get('taux_chomage') or -1,
+            item.get('nombre_jour_pic_particules_fines') or -1,
+            item['gagnant'].get('participationPourcentage') or -1
+         ]
+        for item in merged_data if item])
 
     X_train, X_test, y_train, y_test = train_test_split(
         np.array(X),
@@ -41,17 +51,11 @@ def train_model():
         random_state=42
     )
 
-    model = Sequential([
-        Dense(128, input_dim=1, activation='relu'),
-        Dense(64, activation='relu'),
-        Dense(32, activation='relu'),
-        Dense(2, activation='linear')
-    ])
+    model = MultiOutputRegressor(LinearRegression())
 
-    model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mae'])
-    model.fit(X_train, y_train, epochs=100, batch_size=16, verbose=1)
+    model.fit(X_train, y_train)
 
-    model.save('model.h5')
+    joblib.dump(model, r'model.h5')
 
     return jsonify({'message': 'Model trained and saved successfully.'})
 

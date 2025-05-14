@@ -3,7 +3,7 @@ import numpy as np
 
 def getYears():
 
-    client = bigquery.Client()
+    client = bigquery.Client(project="epsi-454815")
 
     query = """
             SELECT * \
@@ -21,7 +21,7 @@ def getYears():
     return data
 
 def fetchDataByYear(query):
-    client = bigquery.Client()
+    client = bigquery.Client(project="epsi-454815")
     years = getYears()
     query_job = client.query(query)
     results = list(query_job.result())
@@ -52,25 +52,130 @@ def getCAC40perYear():
             """
     return fetchDataByYear(query)
 
+def getResultatElection():
+    query = """
+            SELECT *
+            FROM `epsi-454815.election.fait_resultat_election`
+            """
+    return fetchDataByYear(query)
+
+def getCandidats():
+    query = """
+            SELECT *
+            FROM `epsi-454815.election.dimension_candidat`
+            """
+    client = bigquery.Client(project="epsi-454815")
+    query_job = client.query(query)
+    results = list(query_job.result())
+    data = [dict(row) for row in results]
+    return sorted(data, key=lambda item: item['id_candidat'])
+
+def getTypeElection():
+    query = """
+            SELECT *
+            FROM `epsi-454815.election.dimension_scrutin`
+            """
+    client = bigquery.Client(project="epsi-454815")
+    query_job = client.query(query)
+    results = list(query_job.result())
+    data = [dict(row) for row in results]
+    return sorted(data, key=lambda item: item['id_scrutin'])
+
+def getTourElection():
+    query = """
+            SELECT *
+            FROM `epsi-454815.election.dimension_tour`
+            """
+    client = bigquery.Client(project="epsi-454815")
+    query_job = client.query(query)
+    results = list(query_job.result())
+    data = [dict(row) for row in results]
+    return sorted(data, key=lambda item: item['id_tour'])
+
 def getAllDataPerYear():
     data_cac40 = getCAC40perYear()
     data_chomage = getChomagePerYear()
     data_pollution = getPollutionByYear()
+    data_election = getResultatElection()
+    data_candidats = getCandidats()
+    data_scrutins = getTypeElection()
+    data_tours = getTourElection()
+
+    type_election_id = next(
+        (item['id_scrutin'] for item in data_scrutins if item['type_scrutin'] == 'Présidentielle'),
+        None
+    )
+
+    tour_2 = next(
+        (item['id_tour'] for item in data_tours if item['numero_tour'] == 2),
+        None
+    )
 
     merged_data = [
         {
             'annee': item_cac40['annee'],
             'point_bourse': item_cac40['point_bourse'],
             'taux_chomage': next(
-                (item_chomage['taux_chomage'] for item_chomage in data_chomage if item_chomage['annee'] == item_cac40['annee']),
+                (item_chomage['taux_chomage'] for item_chomage in data_chomage if
+                 item_chomage['annee'] == item_cac40['annee']),
                 None
             ),
             'nombre_jour_pic_particules_fines': next(
-                (item_pollution['nombre_jour_pic_particules_fines'] for item_pollution in data_pollution if item_pollution['annee'] == item_cac40['annee']),
+                (item_pollution['nombre_jour_pic_particules_fines'] for item_pollution in data_pollution if
+                 item_pollution['annee'] == item_cac40['annee']),
                 None
-            )
+            ),
+            'gagnant': {
+                'id_candidat': gagnant_id,
+                'nom_candidat': next(
+                    (candidat['nom'] for candidat in data_candidats if candidat['id_candidat'] == gagnant_id),
+                    None
+                ),
+                'nombre_voix': max_voix,
+                'orientation_politique': next(
+                    (candidat['orientation_politique'] for candidat in data_candidats if
+                     candidat['id_candidat'] == gagnant_id),
+                    None
+                ),
+                'participationPourcentage': next(
+                    iter(
+                        [
+                            round(
+                                (sum(e2['nombre_voix'] for e2 in data_election if
+                                     e2['annee'] == item_cac40['annee'] and e2['id_scrutin'] == type_election_id and e2[
+                                         'id_tour'] == tour_2) /
+                                 sum(e2['nombre_inscrit'] for e2 in data_election if
+                                     e2['annee'] == item_cac40['annee'] and e2['id_scrutin'] == type_election_id and e2[
+                                         'id_tour'] == tour_2)) * 100, 2
+                            )
+                            if sum(e2['nombre_inscrit'] for e2 in data_election if
+                                   e2['annee'] == item_cac40['annee'] and e2['id_scrutin'] == type_election_id and e2[
+                                       'id_tour'] == tour_2) > 0
+                            else None
+                        ]
+                    ),
+                    None
+                ),
+            }
         }
         for item_cac40 in data_cac40
+        for gagnant_id, max_voix in [
+            max(
+                (
+                    (e['id_candidat'], sum(
+                        e2['nombre_voix'] for e2 in data_election
+                        if e2['annee'] == item_cac40['annee'] and e2['id_candidat'] == e['id_candidat'] and e2[
+                            'id_scrutin'] == type_election_id and e2['id_tour'] == tour_2
+                    ))
+                    for e in data_election
+                    if
+                e['annee'] == item_cac40['annee'] and e['id_scrutin'] == type_election_id and e['id_tour'] == tour_2
+                ),
+                key=lambda x: x[1],
+                default=(None, 0)
+            )
+        ]
+        if gagnant_id is not None
     ]
 
     return merged_data

@@ -1,0 +1,8 @@
+Flask
+numpy
+joblib
+keras
+tensorflow
+scikit-learn
+google-cloud-bigquery
+matplotlib
