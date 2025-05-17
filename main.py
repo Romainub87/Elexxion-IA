@@ -108,17 +108,29 @@ def index():
     <head>
         <meta charset='UTF-8'>
         <title>Elexxion AI - Documentation API</title>
+        <style>
+            body { font-family: Arial, sans-serif; background: #f7f7fa; color: #222; margin: 0; padding: 0; }
+            .container { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+            h1 { color: #2a4d9b; }
+            h2 { color: #3b3b3b; margin-top: 32px; }
+            ul { padding-left: 24px; }
+            li { margin-bottom: 10px; }
+            code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+            .logo { font-size: 2.5em; font-weight: bold; color: #2a4d9b; margin-bottom: 0.2em; }
+        </style>
     </head>
     <body>
-        <h1>Elexxion AI</h1>
-        <p>Elexxion AI est une API de prédiction basée sur des données socio-économiques et électorales françaises.</p>
-        <h2>Endpoints disponibles :</h2>
-        <ul>
-            <li><strong>GET /</strong> : Affiche la description de l'application et la liste des endpoints.</li>
-            <li><strong>POST /generate_api_key</strong> : Génère une clé d'API pour un utilisateur.</li>
-            <li><strong>GET /predict</strong> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l'année en paramètre (default: 2025).</li>
-            <li><strong>GET /predict/securite</strong> : Prédit le nombre d'infractions par type pour les 3 prochaines années (2026,2027,2028).</li>
-        </ul>
+        <div class="container">
+            <div class="logo">Elexxion AI</div>
+            <p>Elexxion AI est une API de prédiction basée sur des données socio-économiques et électorales françaises.</p>
+            <h2>Endpoints disponibles :</h2>
+            <ul>
+                <li><code>GET /</code> : Affiche la description de l&#39;application et la liste des endpoints.</li>
+                <li><code>POST /generate_api_key</code> : Génère une clé d&#39;API pour un utilisateur.</li>
+                <li><code>GET /predict</code> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l&#39;année en paramètre (default: 2025).</li>
+                <li><code>GET /predict/securite</code> : Prédit le nombre d&#39;infractions par type pour les 3 prochaines années (2026,2027,2028).</li>
+            </ul>
+        </div>
     </body>
     </html>
     """
