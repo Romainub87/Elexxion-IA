@@ -92,6 +92,13 @@ def getTourElection():
     data = [dict(row) for row in results]
     return sorted(data, key=lambda item: item['id_tour'])
 
+def getPopulationByYear():
+    query = """
+            SELECT *
+            FROM `epsi-454815.election.fait_population`
+            """
+    return fetchDataByYear(query)
+
 def getAllDataPerYear():
     data_cac40 = getCAC40perYear()
     data_chomage = getChomagePerYear()
@@ -100,6 +107,10 @@ def getAllDataPerYear():
     data_candidats = getCandidats()
     data_scrutins = getTypeElection()
     data_tours = getTourElection()
+    data_population = getPopulationByYear()
+
+    pop_moy = np.mean(
+        [item['nombre_habitant'] for item in data_population if item.get('nombre_habitant') is not None])
 
     type_election_id = next(
         (item['id_scrutin'] for item in data_scrutins if item['type_scrutin'] == 'Présidentielle'),
@@ -115,6 +126,11 @@ def getAllDataPerYear():
         {
             'annee': item_cac40['annee'],
             'point_bourse': item_cac40['point_bourse'],
+            'population': next(
+                (item_population['nombre_habitant'] for item_population in data_population if
+                 item_population['annee'] == item_cac40['annee']),
+                pop_moy
+            ),
             'taux_chomage': next(
                 (item_chomage['taux_chomage'] for item_chomage in data_chomage if
                  item_chomage['annee'] == item_cac40['annee']),
@@ -175,7 +191,6 @@ def getAllDataPerYear():
                 default=(None, 0)
             )
         ]
-        if gagnant_id is not None
     ]
 
     return merged_data
