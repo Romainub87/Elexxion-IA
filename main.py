@@ -102,16 +102,27 @@ def predict_securite():
 
 @app.route('/')
 def index():
-    description = {
-        "description": "Elexxion AI est une API de prédiction basée sur des données socio-économiques et électorales françaises.",
-        "endpoints": [
-            {"path": "/", "method": "GET", "description": "Affiche la description de l'application et la liste des endpoints."},
-            {"path": "/generate_api_key", "method": "POST", "description": "Génère une clé d'API pour un utilisateur."},
-            {"path": "/predict", "method": "GET", "description": "Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l'année en paramètre (default: 2025)."},
-            {"path": "/predict/securite", "method": "GET", "description": "Prédit le nombre d'infractions par type pour les 3 prochaines années (2026,2027,2028)."}
-        ]
-    }
-    return jsonify(description)
+    description = """
+    <!DOCTYPE html>
+    <html lang='fr'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Elexxion AI - Documentation API</title>
+    </head>
+    <body>
+        <h1>Elexxion AI</h1>
+        <p>Elexxion AI est une API de prédiction basée sur des données socio-économiques et électorales françaises.</p>
+        <h2>Endpoints disponibles :</h2>
+        <ul>
+            <li><strong>GET /</strong> : Affiche la description de l'application et la liste des endpoints.</li>
+            <li><strong>POST /generate_api_key</strong> : Génère une clé d'API pour un utilisateur.</li>
+            <li><strong>GET /predict</strong> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l'année en paramètre (default: 2025).</li>
+            <li><strong>GET /predict/securite</strong> : Prédit le nombre d'infractions par type pour les 3 prochaines années (2026,2027,2028).</li>
+        </ul>
+    </body>
+    </html>
+    """
+    return description, 200, {'Content-Type': 'text/html'}
 
 if __name__ == '__main__':
     app.run(debug=True)
