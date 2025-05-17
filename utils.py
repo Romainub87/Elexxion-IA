@@ -112,6 +112,9 @@ def getAllDataPerYear():
     pop_moy = np.mean(
         [item['nombre_habitant'] for item in data_population if item.get('nombre_habitant') is not None])
 
+
+
+
     type_election_id = next(
         (item['id_scrutin'] for item in data_scrutins if item['type_scrutin'] == 'Présidentielle'),
         None
@@ -121,6 +124,19 @@ def getAllDataPerYear():
         (item['id_tour'] for item in data_tours if item['numero_tour'] == 2),
         None
     )
+
+    particip_moy = np.mean([
+        round(
+            (sum(e2['nombre_voix'] for e2 in data_election if
+                 e2.get('id_tour') == tour_2 and e2.get('annee') == item['annee']) /
+             sum(e2['nombre_inscrit'] for e2 in data_election if
+                 e2.get('id_tour') == tour_2 and e2.get('annee') == item['annee'])) * 100, 2
+        )
+        for item in data_election
+        if item.get('id_tour') == tour_2 and
+           sum(e2['nombre_inscrit'] for e2 in data_election if
+               e2.get('id_tour') == tour_2 and e2.get('annee') == item['annee']) > 0
+    ])
 
     merged_data = [
         {
@@ -167,10 +183,10 @@ def getAllDataPerYear():
                             if sum(e2['nombre_inscrit'] for e2 in data_election if
                                    e2['annee'] == item_cac40['annee'] and e2['id_scrutin'] == type_election_id and e2[
                                        'id_tour'] == tour_2) > 0
-                            else None
+                            else particip_moy
                         ]
                     ),
-                    None
+                    particip_moy
                 ),
             }
         }
@@ -193,4 +209,5 @@ def getAllDataPerYear():
         ]
     ]
 
+    print(merged_data)
     return merged_data
