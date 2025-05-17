@@ -254,10 +254,11 @@ def index():
                 <li style="white-space: pre-line; word-break: break-word;"><code>GET /</code> : Affiche la description de l&#39;application et la liste des endpoints.</li>
                 <li style="white-space: pre-line; word-break: break-word;"><code>GET /generate_api_key</code> : Génère une clé d&#39;API pour un utilisateur.<br><b>Exemple de réponse&nbsp;:</b><br><code>{"api_key": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}</code></li>
                 <li style="white-space: pre-line; word-break: break-word;"><code>GET /predict?annee=?</code> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l&#39;année en paramètre (default: 2025).<br><b>Exemple de réponse&nbsp;:</b><br><code>[{<br>"annee":2026,<br>"point_bourse":1234.56,<br>"population":67000000,<br>"taux_chomage":8.5,<br>"nombre_jour_pic_particules_fines":12,<br>"participation_tour2":75.2<br>},...]</code></li>
-                <li style="white-space: pre-line; word-break: break-word;"><code>GET /predict/securite</code> : Prédit le nombre d&#39;infractions par type pour les 3 prochaines années (2026,2027,2028).<br><b>Exemple de réponse&nbsp;:</b><br><code>{
+                <li style="white-space: pre-line; word-break: break-word;"><code>GET /predict/securite</code> : Prédit le nombre d&#39;infractions par type pour les 3 prochaines années (ex: 2026,2027,2028).<br><b>Exemple de réponse&nbsp;:</b><br><code>{
                 "2026":[{<br>"nombre_infraction":123,
                 "type_infraction":"Vol"
                 }],...}</code></li>
+                <li style="white-space: pre-line; word-break: break-word;"><code>GET /predict/election?annee=?</code> : Prédit l&#39;orientation politique du gagnant de la présidentielle pour les 3 prochaines années à partir de l&#39;année donnée (default: 2025).<br><b>Exemple de réponse&nbsp;:</b><br><code>[{<br>"annee":2026,<br>"gagnant": {"nom_candidat": "Dupont", "orientation_politique": "Centre"}<br>},...]</code></li>
             </ul>
         </div>
     </body>
