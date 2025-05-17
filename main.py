@@ -1,4 +1,5 @@
-from flask import Flask, jsonify, request
+import uuid
+from flask import Flask, jsonify, request, abort
 import numpy as np
 import joblib
 from sklearn.linear_model import LinearRegression
@@ -8,6 +9,28 @@ from utils import getAllDataPerYear
 from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
+
+# Simuler une base de données pour stocker les clés d'API
+api_keys = {}
+
+# Route pour générer une clé d'API
+@app.route('/generate_api_key', methods=['POST'])
+def generate_api_key():
+    user_id = request.json.get('user_id')
+    if not user_id:
+        abort(400, description="L'identifiant utilisateur est requis")
+
+    api_key = str(uuid.uuid4())
+    api_keys[user_id] = api_key
+    return jsonify({"user_id": user_id, "api_key": api_key})
+
+# Middleware pour vérifier la clé d'API
+@app.before_request
+def verify_api_key():
+    if request.endpoint not in ['generate_api_key', 'index']:
+        api_key = request.headers.get('x-api-key')
+        if api_key not in api_keys.values():
+            abort(401, description="Clé d'API invalide ou manquante")
 
 @app.route('/predict', methods=['GET'])
 def predict():
@@ -79,7 +102,16 @@ def predict_securite():
 
 @app.route('/')
 def index():
-    return 'Elexxion AI'
+    description = {
+        "description": "Elexxion AI est une API de prédiction basée sur des données socio-économiques et électorales françaises.",
+        "endpoints": [
+            {"path": "/", "method": "GET", "description": "Affiche la description de l'application et la liste des endpoints."},
+            {"path": "/generate_api_key", "method": "POST", "description": "Génère une clé d'API pour un utilisateur."},
+            {"path": "/predict", "method": "GET", "description": "Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l'année en paramètre (default: 2025)."},
+            {"path": "/predict/securite", "method": "GET", "description": "Prédit le nombre d'infractions par type pour les 3 prochaines années (2026,2027,2028)."}
+        ]
+    }
+    return jsonify(description)
 
 if __name__ == '__main__':
     app.run(debug=True)
