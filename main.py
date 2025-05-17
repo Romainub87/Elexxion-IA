@@ -11,25 +11,21 @@ from sklearn.model_selection import train_test_split
 app = Flask(__name__)
 
 # Simuler une base de données pour stocker les clés d'API
-api_keys = {}
+api_keys = []
 
 # Route pour générer une clé d'API
-@app.route('/generate_api_key', methods=['POST'])
+@app.route('/generate_api_key', methods=['GET'])
 def generate_api_key():
-    user_id = request.json.get('user_id')
-    if not user_id:
-        abort(400, description="L'identifiant utilisateur est requis")
-
     api_key = str(uuid.uuid4())
-    api_keys[user_id] = api_key
-    return jsonify({"user_id": user_id, "api_key": api_key})
+    api_keys.append(api_key)
+    return jsonify({"api_key": api_key})
 
 # Middleware pour vérifier la clé d'API
 @app.before_request
 def verify_api_key():
-    if request.endpoint not in ['generate_api_key', 'index']:
+    if request.path.lstrip('/').split('/')[0] not in ['generate_api_key', 'index']:
         api_key = request.headers.get('x-api-key')
-        if api_key not in api_keys.values():
+        if api_key not in api_keys:
             abort(401, description="Clé d'API invalide ou manquante")
 
 @app.route('/predict', methods=['GET'])
