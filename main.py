@@ -26,7 +26,7 @@ def generate_api_key():
 # Middleware pour vérifier la clé d'API
 @app.before_request
 def verify_api_key():
-    if request.path.lstrip('/').split('/')[0] not in ['generate_api_key', '', 'predict']:
+    if request.path.lstrip('/').split('/')[0] not in ['generate_api_key', '']:
         api_key = request.headers.get('x-api-key')
         if api_key not in api_keys:
             abort(401, description="Clé d'API invalide ou manquante")
