@@ -1,4 +1,3 @@
-from securite_utils import getSecuriteByYearAndType
-from utils import getAllDataPerYear
+from election_utils import getAllDataWhereElectionPerYear
 
-print(getSecuriteByYearAndType())
+print(getAllDataWhereElectionPerYear())

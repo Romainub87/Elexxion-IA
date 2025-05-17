@@ -4,9 +4,12 @@ import numpy as np
 import joblib
 from sklearn.linear_model import LinearRegression
 from sklearn.multioutput import MultiOutputRegressor
+from election_utils import getCandidatsPresidentielle
+from election_utils import getAllDataWhereElectionPerYear
 from securite_utils import getSecuriteByYearAndType
 from utils import getAllDataPerYear
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 
@@ -23,7 +26,7 @@ def generate_api_key():
 # Middleware pour vérifier la clé d'API
 @app.before_request
 def verify_api_key():
-    if request.path.lstrip('/').split('/')[0] not in ['generate_api_key', '']:
+    if request.path.lstrip('/').split('/')[0] not in ['generate_api_key', '', 'predict']:
         api_key = request.headers.get('x-api-key')
         if api_key not in api_keys:
             abort(401, description="Clé d'API invalide ou manquante")
@@ -96,6 +99,133 @@ def predict_securite():
 
     return jsonify(predictions_result)
 
+@app.route('/predict/election', methods=['GET'])
+def predict_election():
+    annee_courante = int(request.args.get('annee', 2025))
+    annees = np.array([[annee_courante + i] for i in range(1, 4)])
+
+    merged_data = getAllDataWhereElectionPerYear()
+    # Charger les prédictions de sécurité pour les années futures
+    from flask import current_app
+    with current_app.test_request_context():
+        securite_predictions = getSecuriteByYearAndType()
+        # Prédire la sécurité pour les années futures
+        securite_future = {}
+        for annee in [annee_courante + i for i in range(1, 4)]:
+            securite_future[annee] = {}
+            for infraction_type, data in securite_predictions.items():
+                annees_hist = np.array([d["annee"] for d in data]).reshape(-1, 1)
+                valeurs = np.array([d["nombre_infraction"] for d in data])
+                if len(annees_hist) > 1:
+                    reg = LinearRegression()
+                    reg.fit(annees_hist, valeurs)
+                    prediction = int(reg.predict(np.array([[annee]]))[0])
+                    securite_future[annee][infraction_type] = prediction
+                else:
+                    securite_future[annee][infraction_type] = valeurs[0] if len(valeurs) else 0
+
+    # Entraîner et sauvegarder le modèle de classification pour l'orientation politique selon le contexte socio-économique + sécurité
+    if request.args.get('train') == '1':
+        # On ajoute la sécurité comme feature
+        all_infraction_types = set()
+        for data in getSecuriteByYearAndType().values():
+            for d in data:
+                all_infraction_types.add(d['type_infraction'])
+        all_infraction_types = sorted(list(all_infraction_types))
+
+        X_classif = []
+        for item in merged_data:
+            features = [
+                item['annee'],
+                item.get('point_bourse') or -1,
+                item.get('taux_chomage') or -1,
+                item.get('nombre_jour_pic_particules_fines') or -1,
+                item.get('population')
+            ]
+            # Ajout des features sécurité (par type, 0 si manquant)
+            securite_annee = {s['type_infraction']: s['nombre_infraction'] for s in item.get('securite', [])}
+            features += [securite_annee.get(t, 0) for t in all_infraction_types]
+            X_classif.append(features)
+        X_classif = np.array(X_classif)
+
+        y_classif = np.array([
+            f"{item['gagnant'].get('orientation_politique', '')}__{item['annee']}_{item.get('point_bourse') or -1}_{item.get('taux_chomage') or -1}_{item.get('nombre_jour_pic_particules_fines') or -1}_{item.get('population')}"
+            for item in merged_data
+        ])
+        le = LabelEncoder()
+        y_classif_encoded = le.fit_transform(y_classif)
+        from sklearn.ensemble import RandomForestClassifier
+        model_classif = RandomForestClassifier()
+        model_classif.fit(X_classif, y_classif_encoded)
+        joblib.dump(model_classif, r'model_classif.h5')
+        joblib.dump(le, r'label_encoder_classif.h5')
+        joblib.dump(all_infraction_types, r'securite_types.h5')
+
+    model_classif = joblib.load(r'model_classif.h5')
+    model_reg = joblib.load(r'model.h5')
+    all_infraction_types = joblib.load(r'securite_types.h5')
+
+    # Prédire les indicateurs socio-économiques
+    predictions_reg = model_reg.predict(annees)
+
+    # Ajouter les prédictions de sécurité comme features pour la prédiction
+    X_pred = []
+    for i, pred in enumerate(predictions_reg):
+        annee = annee_courante + i + 1
+        features = [
+            annee,
+            pred[0],  # point_bourse
+            pred[1],  # taux_chomage
+            pred[2],  # nombre_jour_pic_particules_fines
+            pred[4],  # population
+        ]
+        # Ajout des features sécurité (par type, 0 si manquant)
+        securite_annee = securite_future.get(annee, {})
+        features += [securite_annee.get(t, 0) for t in all_infraction_types]
+        X_pred.append(features)
+    X_pred = np.array(X_pred)
+
+    # Encoder les orientations politiques connues
+    le = LabelEncoder()
+    orientations = [item['gagnant'].get('orientation_politique', '') for item in merged_data]
+    le.fit(orientations)
+
+    # Prédire l'orientation politique du gagnant
+    predictions_classif = model_classif.predict(X_pred)
+    orientations_predites = le.inverse_transform(predictions_classif)
+
+    # Récupérer tous les candidats présidentiels
+    candidats_presidentielle = getCandidatsPresidentielle()
+
+    # Compter le nombre total de voix pour chaque candidat sur toutes les années précédentes
+    from collections import Counter
+    votes_par_candidat = Counter()
+    for item in merged_data:
+        gagnant = item.get('gagnant', {})
+        if gagnant and gagnant.get('id_candidat'):
+            votes_par_candidat[gagnant['id_candidat']] += gagnant.get('nombre_voix', 0)
+
+    # Trier les candidats par nombre de voix décroissant
+    candidats_tries = sorted(
+        candidats_presidentielle,
+        key=lambda c: votes_par_candidat.get(c['id_candidat'], 0),
+        reverse=True
+    )
+    candidats_par_orientation = {c['orientation_politique']: c for c in candidats_tries}
+    print(candidats_par_orientation)
+
+    result = []
+    for i, orientation_predite in enumerate(orientations_predites):
+        gagnant = candidats_par_orientation.get(orientation_predite, {})
+        result.append({
+            'annee': annee_courante + i + 1,
+            'gagnant': {
+                'nom_candidat': gagnant.get('nom'),
+                'orientation_politique': gagnant.get('orientation_politique')
+            }
+        })
+
+    return jsonify(result)
 @app.route('/')
 def index():
     description = """

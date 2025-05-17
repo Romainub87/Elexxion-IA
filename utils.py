@@ -112,9 +112,6 @@ def getAllDataPerYear():
     pop_moy = np.mean(
         [item['nombre_habitant'] for item in data_population if item.get('nombre_habitant') is not None])
 
-
-
-
     type_election_id = next(
         (item['id_scrutin'] for item in data_scrutins if item['type_scrutin'] == 'Présidentielle'),
         None
@@ -208,6 +205,4 @@ def getAllDataPerYear():
             )
         ]
     ]
-
-    print(merged_data)
     return merged_data
