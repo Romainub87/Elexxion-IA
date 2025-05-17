@@ -122,8 +122,8 @@ def index():
             <h2>Endpoints disponibles :</h2>
             <ul>
                 <li><code>GET /</code> : Affiche la description de l&#39;application et la liste des endpoints.</li>
-                <li><code>POST /generate_api_key</code> : Génère une clé d&#39;API pour un utilisateur.</li>
-                <li><code>GET /predict</code> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l&#39;année en paramètre (default: 2025).</li>
+                <li><code>GET /generate_api_key</code> : Génère une clé d&#39;API pour un utilisateur.</li>
+                <li><code>GET /predict?annee=?</code> : Prédit les indicateurs socio-économiques et électoraux pour les 3 prochaines années par rapport à l&#39;année en paramètre (default: 2025).</li>
                 <li><code>GET /predict/securite</code> : Prédit le nombre d&#39;infractions par type pour les 3 prochaines années (2026,2027,2028).</li>
             </ul>
         </div>
