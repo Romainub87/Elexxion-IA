@@ -59,7 +59,7 @@ def predict():
 
     model = joblib.load(r'models/model.h5')
 
-    # Effectuer les prédictions
+    # Effectuer les prédictions des indicateurs socio-économiques
     predictions = model.predict(annees)
 
     result = []
@@ -77,11 +77,12 @@ def predict():
 
 @app.route('/predict/securite', methods=['GET'])
 def predict_securite():
+    annee_depart = int(request.args.get('annee', 2025))
     result = getSecuriteByYearAndType()
 
     predictions_result = {}
 
-    for annee in [2025, 2026, 2027]:
+    for annee in [annee_depart + i for i in range(1, 4)]:
         predictions_result[annee] = []
         for infraction_type, data in result.items():
             annees = np.array([d["annee"] for d in data]).reshape(-1, 1)
