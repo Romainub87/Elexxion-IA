@@ -222,10 +222,10 @@ def predict_accuracy():
     # Prédictions sur l'ensemble de test
     y_pred = model.predict(X_test)
 
-    # Calcul du R^2
-    accuracy = r2_score(y_test, y_pred)
+    # Calcul du R^2 en pourcentage
+    accuracy = r2_score(y_test, y_pred) * 100
 
-    return jsonify({"accuracy": round(accuracy, 4)})
+    return jsonify({"accuracy_percent": round(accuracy, 2)})
 @app.route('/')
 def index():
     description = """
