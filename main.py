@@ -165,7 +165,7 @@ def predict_election():
         annee = annee_courante + i + 1
         features = [
             annee,
-            0,
+            pred[0],
             pred[1],
             pred[2],
             pred[4],
