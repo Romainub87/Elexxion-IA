@@ -193,6 +193,39 @@ def predict_election():
         })
 
     return jsonify(result)
+
+from sklearn.metrics import r2_score
+
+@app.route('/predict/accuracy', methods=['GET'])
+def predict_accuracy():
+    # Charger les données et le modèle
+    merged_data = getAllDataPerYear()
+    X = np.array([[item['annee']] for item in merged_data])
+    y = np.array([
+        [
+            item.get('point_bourse') or -1,
+            item.get('taux_chomage') or -1,
+            item.get('nombre_jour_pic_particules_fines') or -1,
+            item['gagnant'].get('participationPourcentage') or -1,
+            item.get('population'),
+        ]
+        for item in merged_data if item
+    ])
+    X_train, X_test, y_train, y_test = train_test_split(
+        np.array(X),
+        np.array(y),
+        test_size=0.2,
+        random_state=42
+    )
+    model = joblib.load(r'models/model.h5')
+
+    # Prédictions sur l'ensemble de test
+    y_pred = model.predict(X_test)
+
+    # Calcul du R^2
+    accuracy = r2_score(y_test, y_pred)
+
+    return jsonify({"accuracy": round(accuracy, 4)})
 @app.route('/')
 def index():
     description = """
