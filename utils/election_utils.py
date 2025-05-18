@@ -1,11 +1,8 @@
 import numpy as np
 from google.cloud import bigquery
-
-from utils import getCAC40perYear, getPollutionByYear, getResultatElection, getChomagePerYear, getCandidats, \
+from utils.indicators_utils import getCAC40perYear, getPollutionByYear, getResultatElection, getChomagePerYear, getCandidats, \
     getTypeElection, getPopulationByYear, getTourElection
-
-from securite_utils import getSecuriteByYearAndType
-
+from utils.securite_utils import getSecuriteByYearAndType
 
 def getAllDataWhereElectionPerYear():
     data_cac40 = getCAC40perYear()
@@ -46,7 +43,6 @@ def getAllDataWhereElectionPerYear():
 
     merged_data = []
     for item_cac40 in data_cac40:
-        # Trouver le gagnant pour l'année donnée
         candidats_annee = [
             (
                 e['id_candidat'],
@@ -64,11 +60,11 @@ def getAllDataWhereElectionPerYear():
             and e['id_tour'] == tour_2
         ]
         if not candidats_annee:
-            continue  # Sauter les années sans gagnant
+            continue
 
         gagnant_id, max_voix = max(candidats_annee, key=lambda x: x[1], default=(None, 0))
         if gagnant_id is None or max_voix == 0:
-            continue  # Sauter si pas de gagnant
+            continue
 
         participation = particip_moy
         total_inscrits = sum(
@@ -111,7 +107,7 @@ def getAllDataWhereElectionPerYear():
                  item_pollution['annee'] == item_cac40['annee']),
                 None
             ),
-            'securite': securite_annee,  # Liste des données sécurité pour l'année
+            'securite': securite_annee,
             'gagnant': {
                 'id_candidat': gagnant_id,
                 'nom_candidat': next(
@@ -138,7 +134,6 @@ def getCandidatsPresidentielle():
         None
     )
 
-    # On récupère les id_candidat ayant participé à une présidentielle
     query = """
             SELECT DISTINCT id_candidat
             FROM `epsi-454815.election.fait_resultat_election`
@@ -151,7 +146,6 @@ def getCandidatsPresidentielle():
     query_job = client.query(query, job_config=job_config)
     candidats_ids = [row['id_candidat'] for row in query_job.result()]
 
-    # On récupère les infos des candidats concernés
     query = """
             SELECT id_candidat, nom, orientation_politique
             FROM `epsi-454815.election.dimension_candidat`
@@ -168,4 +162,27 @@ def getCandidatsPresidentielle():
         for row in data if row['id_candidat'] in candidats_ids
     ]
     return candidats
+
+def getCandidatsClassementEtLabelEncoder(merged_data):
+    from collections import Counter
+    from sklearn.preprocessing import LabelEncoder
+
+    candidats_presidentielle = getCandidatsPresidentielle()
+    votes_par_candidat = Counter()
+    for item in merged_data:
+        gagnant = item.get('gagnant', {})
+        if gagnant and gagnant.get('id_candidat'):
+            votes_par_candidat[gagnant['id_candidat']] += gagnant.get('nombre_voix', 0)
+
+    candidats_tries = sorted(
+        candidats_presidentielle,
+        key=lambda c: votes_par_candidat.get(c['id_candidat'], 0),
+        reverse=True
+    )
+    candidats_par_orientation = {c['orientation_politique']: c for c in candidats_tries}
+    le = LabelEncoder()
+    orientations = list(
+        set(c['orientation_politique'] for c in candidats_presidentielle if c.get('orientation_politique')))
+    le.fit(orientations)
+    return candidats_presidentielle, candidats_tries, candidats_par_orientation, le, orientations
 

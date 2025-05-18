@@ -1,3 +1,0 @@
-from election_utils import getAllDataWhereElectionPerYear
-
-print(getAllDataWhereElectionPerYear())
