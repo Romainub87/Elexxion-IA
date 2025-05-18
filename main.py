@@ -11,6 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from utils.election_utils import getCandidatsClassementEtLabelEncoder
+from sklearn.metrics import accuracy_score, mean_absolute_error
 
 app = Flask(__name__)
 
@@ -194,8 +195,6 @@ def predict_election():
 
     return jsonify(result)
 
-from sklearn.metrics import r2_score
-
 @app.route('/predict/accuracy', methods=['GET'])
 def predict_accuracy():
     # Charger les données et le modèle
@@ -212,20 +211,41 @@ def predict_accuracy():
         for item in merged_data if item
     ])
     X_train, X_test, y_train, y_test = train_test_split(
-        np.array(X),
-        np.array(y),
-        test_size=0.2,
-        random_state=42
+        X, y, test_size=0.2, random_state=42
     )
     model = joblib.load(r'models/model.h5')
 
     # Prédictions sur l'ensemble de test
     y_pred = model.predict(X_test)
 
-    # Calcul du R^2 en pourcentage
-    accuracy = r2_score(y_test, y_pred) * 100
+    # Calcul de la MAE et RMSE pour chaque indicateur
+    mae = np.mean(np.abs(y_test - y_pred), axis=0)
 
-    return jsonify({"accuracy_percent": round(accuracy, 2)})
+    return jsonify({
+        "mae": [round(float(m), 2) for m in mae],
+    })
+
+@app.route('/predict/securite/accuracy', methods=['GET'])
+def predict_securite_accuracy():
+    result = getSecuriteByYearAndType()
+
+    mae_per_type = {}
+    for infraction_type, data in result.items():
+        annees = np.array([d["annee"] for d in data]).reshape(-1, 1)
+        valeurs = np.array([d["nombre_infraction"] for d in data])
+        if len(annees) > 1:
+            # Diviser les données en train/test
+            X_train, X_test, y_train, y_test = train_test_split(
+                annees, valeurs, test_size=0.2, random_state=42
+            )
+            reg = LinearRegression()
+            reg.fit(X_train, y_train)
+            y_pred = reg.predict(X_test)
+            # Calculer la MAE pour ce type d'infraction
+            mae_per_type[infraction_type] = mean_absolute_error(y_test, y_pred)
+
+    return jsonify({infraction: round(mae, 2) for infraction, mae in mae_per_type.items()})
+
 @app.route('/')
 def index():
     description = """
