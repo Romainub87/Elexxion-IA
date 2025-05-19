@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 from utils.indicators_utils import getYears
 
-def getSecuriteByYearAndType(cache_file='securite_cache.json'):
+def getSecuriteByYearAndType(cache_file='data/securite_cache.json'):
     import os
     import json
 

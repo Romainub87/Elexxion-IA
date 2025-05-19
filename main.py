@@ -21,7 +21,7 @@ api_key = "rM+_8rujGnjryM%jvC@bPMgjfgPe0S&6"
 
 @app.before_request
 def verify_api_key():
-    if request.path.lstrip('/').split('/')[0] not in ['', 'static']:
+    if request.path.lstrip('/').split('/')[0] not in ['', 'static', 'predict']:
         header_key = request.headers.get('x-api-key')
         if header_key != api_key:
             abort(401, description="Clé d'API invalide ou manquante")

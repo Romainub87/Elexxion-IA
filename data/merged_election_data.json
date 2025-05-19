@@ -1,0 +1,321 @@
+[
+  {
+    "annee": 2007,
+    "point_bourse": 5747.22,
+    "population": 2167834.5,
+    "taux_chomage": 7.7,
+    "nombre_jour_pic_particules_fines": null,
+    "securite": [],
+    "gagnant": {
+      "id_candidat": "e8023549-cae1-4375-96f7-53efc1bdba00",
+      "nom_candidat": "sarkozy nicolas",
+      "nombre_voix": 511920,
+      "orientation_politique": "droite",
+      "participationPourcentage": 41.73
+    }
+  },
+  {
+    "annee": 2017,
+    "point_bourse": 5154.41,
+    "population": 2167834.5,
+    "taux_chomage": 7.4,
+    "nombre_jour_pic_particules_fines": 6,
+    "securite": [
+      {
+        "id_securite": "70735473-73e2-4dca-abd6-facd31185424",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols violents sans arme",
+        "nombre_infraction": 3415,
+        "type_infraction_1": "vols violents sans arme",
+        "annee": 2017
+      },
+      {
+        "id_securite": "dab43b75-33e9-4890-9b8b-fd992745de6a",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols d'accessoires sur véhicules",
+        "nombre_infraction": 7463,
+        "type_infraction_1": "vols d'accessoires sur véhicules",
+        "annee": 2017
+      },
+      {
+        "id_securite": "ed3aeca2-0ca6-49f5-babf-c74a6416f35e",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "destructions et dégradations volontaires",
+        "nombre_infraction": 51438,
+        "type_infraction_1": "destructions et dégradations volontaires",
+        "annee": 2017
+      },
+      {
+        "id_securite": "8ae3d4db-7437-44ee-baf2-dca2bd339dcd",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "trafic de stupéfiants",
+        "nombre_infraction": 3717,
+        "type_infraction_1": "trafic de stupéfiants",
+        "annee": 2017
+      },
+      {
+        "id_securite": "659acd72-305c-47c1-87d6-a44ab7917660",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols dans les véhicules",
+        "nombre_infraction": 19662,
+        "type_infraction_1": "vols dans les véhicules",
+        "annee": 2017
+      },
+      {
+        "id_securite": "cf498248-fbd5-4106-af51-055519f2dc0c",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols sans violence contre des personnes",
+        "nombre_infraction": 51902,
+        "type_infraction_1": "vols sans violence contre des personnes",
+        "annee": 2017
+      },
+      {
+        "id_securite": "4994cae2-960f-4dd6-84da-b78f550415c2",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols de véhicules",
+        "nombre_infraction": 9499,
+        "type_infraction_1": "vols de véhicules",
+        "annee": 2017
+      },
+      {
+        "id_securite": "fcb763b4-d264-47d9-a1d1-052285db59e5",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "violences sexuelles",
+        "nombre_infraction": 4947,
+        "type_infraction_1": "violences sexuelles",
+        "annee": 2017
+      },
+      {
+        "id_securite": "28d4a031-ca69-43b6-8e2c-f39e46a4498c",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "cambriolages de logement",
+        "nombre_infraction": 21874,
+        "type_infraction_1": "cambriolages de logement",
+        "annee": 2017
+      },
+      {
+        "id_securite": "2eb82589-0c97-4f61-8d11-cd4f539d4177",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "vols avec armes",
+        "nombre_infraction": 366,
+        "type_infraction_1": "vols avec armes",
+        "annee": 2017
+      },
+      {
+        "id_securite": "2d53dd75-81ef-42e9-8477-18178ae546f1",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "tentatives d'homicides",
+        "nombre_infraction": 103,
+        "type_infraction_1": "tentatives d'homicides",
+        "annee": 2017
+      },
+      {
+        "id_securite": "37d1625a-a282-49b1-a76b-c911484bb626",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "coups et blessures volontaires intrafamiliaux",
+        "nombre_infraction": 6748,
+        "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+        "annee": 2017
+      },
+      {
+        "id_securite": "fd517eb6-070e-439d-b3f0-8e373df574f7",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "coups et blessures volontaires",
+        "nombre_infraction": 15526,
+        "type_infraction_1": "coups et blessures volontaires",
+        "annee": 2017
+      },
+      {
+        "id_securite": "3966dd68-f392-46bc-a900-de505f03dfaa",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "usage de stupéfiants",
+        "nombre_infraction": 12645,
+        "type_infraction_1": "usage de stupéfiants",
+        "annee": 2017
+      },
+      {
+        "id_securite": "f2cc724d-a2f3-4c29-80c7-0abc03b80527",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "autres coups et blessures volontaires",
+        "nombre_infraction": 8778,
+        "type_infraction_1": "autres coups et blessures volontaires",
+        "annee": 2017
+      },
+      {
+        "id_securite": "62a6d1e8-53ad-419a-b9c7-b3739cd7bfc6",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "homicides",
+        "nombre_infraction": 63,
+        "type_infraction_1": "homicides",
+        "annee": 2017
+      },
+      {
+        "id_securite": "8b9417c8-67bc-4069-82c2-01b3cf6d8091",
+        "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+        "type_infraction": "escroqueries",
+        "nombre_infraction": 19882,
+        "type_infraction_1": "escroqueries",
+        "annee": 2017
+      }
+    ],
+    "gagnant": {
+      "id_candidat": "ec3107ac-ed6d-42aa-862f-1bce8178c8a8",
+      "nom_candidat": "macron emmanuel",
+      "nombre_voix": 849257,
+      "orientation_politique": "centre",
+      "participationPourcentage": 37.24
+    }
+  },
+  {
+    "annee": 2022,
+    "point_bourse": 6479.19,
+    "population": 2167834.5,
+    "taux_chomage": 5.8,
+    "nombre_jour_pic_particules_fines": 5,
+    "securite": [
+      {
+        "id_securite": "e6555997-b5bc-466c-a7e1-36499041aa2e",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols violents sans arme",
+        "nombre_infraction": 2688,
+        "type_infraction_1": "vols violents sans arme",
+        "annee": 2022
+      },
+      {
+        "id_securite": "c05a0ef8-b3ea-4105-9fd9-ccb8343ec094",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols d'accessoires sur véhicules",
+        "nombre_infraction": 6909,
+        "type_infraction_1": "vols d'accessoires sur véhicules",
+        "annee": 2022
+      },
+      {
+        "id_securite": "5fe53614-3bdb-4fe7-a696-32dcd55e5e23",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "destructions et dégradations volontaires",
+        "nombre_infraction": 46119,
+        "type_infraction_1": "destructions et dégradations volontaires",
+        "annee": 2022
+      },
+      {
+        "id_securite": "a4844a14-ab05-413a-b528-4a6e70073346",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "trafic de stupéfiants",
+        "nombre_infraction": 2776,
+        "type_infraction_1": "trafic de stupéfiants",
+        "annee": 2022
+      },
+      {
+        "id_securite": "e40b35eb-c546-4f04-91d8-b4862f8dfe2b",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols dans les véhicules",
+        "nombre_infraction": 18545,
+        "type_infraction_1": "vols dans les véhicules",
+        "annee": 2022
+      },
+      {
+        "id_securite": "5c05c245-318f-47c2-8b1c-d5a240739b0a",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols sans violence contre des personnes",
+        "nombre_infraction": 45586,
+        "type_infraction_1": "vols sans violence contre des personnes",
+        "annee": 2022
+      },
+      {
+        "id_securite": "c93476bc-0f82-4f3a-9048-1bdbc7762233",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols de véhicules",
+        "nombre_infraction": 9139,
+        "type_infraction_1": "vols de véhicules",
+        "annee": 2022
+      },
+      {
+        "id_securite": "ed0d8478-3b7c-4e01-92cf-385a7c55ec39",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "violences sexuelles",
+        "nombre_infraction": 9703,
+        "type_infraction_1": "violences sexuelles",
+        "annee": 2022
+      },
+      {
+        "id_securite": "fb6cc09e-d308-45e3-a3e0-9455020d3bc1",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "cambriolages de logement",
+        "nombre_infraction": 19605,
+        "type_infraction_1": "cambriolages de logement",
+        "annee": 2022
+      },
+      {
+        "id_securite": "51bb757f-ce9a-4813-89d6-200dbf56aa5e",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "vols avec armes",
+        "nombre_infraction": 357,
+        "type_infraction_1": "vols avec armes",
+        "annee": 2022
+      },
+      {
+        "id_securite": "dc15e8aa-18c6-4619-b281-065bb8d0e99d",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "tentatives d'homicides",
+        "nombre_infraction": 235,
+        "type_infraction_1": "tentatives d'homicides",
+        "annee": 2022
+      },
+      {
+        "id_securite": "95537fb2-4f3c-4cb5-9e34-e9c625012724",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "coups et blessures volontaires intrafamiliaux",
+        "nombre_infraction": 14206,
+        "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+        "annee": 2022
+      },
+      {
+        "id_securite": "968012b6-f0c3-4496-ae05-84346f1eb293",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "coups et blessures volontaires",
+        "nombre_infraction": 25387,
+        "type_infraction_1": "coups et blessures volontaires",
+        "annee": 2022
+      },
+      {
+        "id_securite": "06b9ccbb-cb7f-40d8-bd5e-712373f4fb75",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "usage de stupéfiants",
+        "nombre_infraction": 13723,
+        "type_infraction_1": "usage de stupéfiants",
+        "annee": 2022
+      },
+      {
+        "id_securite": "dd63987f-c99c-48c0-af5b-43ee51cb5d0b",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "autres coups et blessures volontaires",
+        "nombre_infraction": 11181,
+        "type_infraction_1": "autres coups et blessures volontaires",
+        "annee": 2022
+      },
+      {
+        "id_securite": "810b631e-9bbe-49ae-aebf-65e9053033de",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "homicides",
+        "nombre_infraction": 63,
+        "type_infraction_1": "homicides",
+        "annee": 2022
+      },
+      {
+        "id_securite": "662d621e-b6c6-41c9-9583-e85adc618ad5",
+        "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+        "type_infraction": "escroqueries",
+        "nombre_infraction": 33403,
+        "type_infraction_1": "escroqueries",
+        "annee": 2022
+      }
+    ],
+    "gagnant": {
+      "id_candidat": "ec3107ac-ed6d-42aa-862f-1bce8178c8a8",
+      "nom_candidat": "macron emmanuel",
+      "nombre_voix": 226823,
+      "orientation_politique": "centre",
+      "participationPourcentage": 34.74
+    }
+  }
+]

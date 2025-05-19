@@ -5,9 +5,17 @@ from utils.indicators_utils import getCAC40perYear, getPollutionByYear, getResul
 from utils.securite_utils import getSecuriteByYearAndType
 
 from functools import lru_cache
+import os
+import json
 
 @lru_cache(maxsize=1)
 def getAllDataWhereElectionPerYear():
+    json_path = "data/merged_election_data.json"
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            merged_data = json.load(f)
+        return merged_data
+
     data_cac40 = getCAC40perYear()
     data_chomage = getChomagePerYear()
     data_pollution = getPollutionByYear()
@@ -126,6 +134,11 @@ def getAllDataWhereElectionPerYear():
                 'participationPourcentage': participation,
             }
         })
+
+    # Sauvegarde dans le fichier JSON pour les prochaines utilisations
+    os.makedirs(os.path.dirname(json_path), exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(merged_data, f, ensure_ascii=False, indent=2)
 
     return merged_data
 

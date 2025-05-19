@@ -1,0 +1,1260 @@
+{
+  "vols violents sans arme": [
+    {
+      "id_securite": "a04bab96-234b-4e9c-acc0-22acc05c43c2",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 3409,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2016
+    },
+    {
+      "id_securite": "70735473-73e2-4dca-abd6-facd31185424",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 3415,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2017
+    },
+    {
+      "id_securite": "c3fd891d-7600-4a40-ad56-8f97b4934505",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 3327,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2018
+    },
+    {
+      "id_securite": "26054f5a-b9c3-42be-b8a4-c8cd596289ab",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 3559,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2019
+    },
+    {
+      "id_securite": "e1092951-593b-4f81-bef2-d58a28e53fbf",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 2882,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2020
+    },
+    {
+      "id_securite": "4347ca9f-46da-4587-b017-1ea01f169d88",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 2591,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2021
+    },
+    {
+      "id_securite": "e6555997-b5bc-466c-a7e1-36499041aa2e",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 2688,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2022
+    },
+    {
+      "id_securite": "29cece53-ba3e-47d7-9f43-c0e25bc82e76",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 2720,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2023
+    },
+    {
+      "id_securite": "904ba677-82b9-4f87-bd2f-893fa01550d7",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols violents sans arme",
+      "nombre_infraction": 2588,
+      "type_infraction_1": "vols violents sans arme",
+      "annee": 2024
+    }
+  ],
+  "vols d'accessoires sur véhicules": [
+    {
+      "id_securite": "583da401-9028-4953-912a-79b7657faebc",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 7457,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2016
+    },
+    {
+      "id_securite": "dab43b75-33e9-4890-9b8b-fd992745de6a",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 7463,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2017
+    },
+    {
+      "id_securite": "a2617795-f481-48dc-a3e4-c6fc3ad4125f",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 7581,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2018
+    },
+    {
+      "id_securite": "200fc5f0-dbc5-4409-a02e-a8981eb941c0",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 7361,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2019
+    },
+    {
+      "id_securite": "ef93de36-2bab-4420-a901-5163903eda75",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 5514,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2020
+    },
+    {
+      "id_securite": "0123ce6b-0a33-422a-91d2-e0550d3385ea",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 5317,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2021
+    },
+    {
+      "id_securite": "c05a0ef8-b3ea-4105-9fd9-ccb8343ec094",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 6909,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2022
+    },
+    {
+      "id_securite": "72a1695e-952a-4f2f-9226-46f5cfea13c0",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 6665,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2023
+    },
+    {
+      "id_securite": "48fd0e0b-57b5-4c23-946a-b7d31f96b16f",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols d'accessoires sur véhicules",
+      "nombre_infraction": 6437,
+      "type_infraction_1": "vols d'accessoires sur véhicules",
+      "annee": 2024
+    }
+  ],
+  "destructions et dégradations volontaires": [
+    {
+      "id_securite": "dcca00d9-284e-4b14-a0c2-a13cd9e615f0",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 49469,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2016
+    },
+    {
+      "id_securite": "ed3aeca2-0ca6-49f5-babf-c74a6416f35e",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 51438,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2017
+    },
+    {
+      "id_securite": "fda8cf03-d0a0-431f-9362-cef862ed3b48",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 50373,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2018
+    },
+    {
+      "id_securite": "5559f033-8f81-4d34-9a8b-a336988921e2",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 51275,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2019
+    },
+    {
+      "id_securite": "5f8ae62d-b7bc-409d-99dd-980f47cce7e0",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 44158,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2020
+    },
+    {
+      "id_securite": "f3ef49df-2dca-4f00-a9e5-480c22af046a",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 46588,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2021
+    },
+    {
+      "id_securite": "5fe53614-3bdb-4fe7-a696-32dcd55e5e23",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 46119,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2022
+    },
+    {
+      "id_securite": "b588a0c0-4e94-4980-8cf1-de5b6fe84486",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 45614,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2023
+    },
+    {
+      "id_securite": "7c57a77c-34ea-4eae-965a-6675467e2fc7",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "destructions et dégradations volontaires",
+      "nombre_infraction": 45405,
+      "type_infraction_1": "destructions et dégradations volontaires",
+      "annee": 2024
+    }
+  ],
+  "trafic de stupéfiants": [
+    {
+      "id_securite": "35a9bcf0-a1e7-477c-bff2-1a6b9bb367f2",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 3282,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2016
+    },
+    {
+      "id_securite": "8ae3d4db-7437-44ee-baf2-dca2bd339dcd",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 3717,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2017
+    },
+    {
+      "id_securite": "85a2f80f-2142-4890-8e6f-19baa7f3d314",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 3042,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2018
+    },
+    {
+      "id_securite": "7293ae5f-c01d-468e-b073-e9950498f6b1",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 3004,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2019
+    },
+    {
+      "id_securite": "d9bb38af-6e98-4808-8e00-775ef8acbd10",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 2537,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2020
+    },
+    {
+      "id_securite": "cd79fed8-b3dc-404b-948d-ede889c89aba",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 2833,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2021
+    },
+    {
+      "id_securite": "a4844a14-ab05-413a-b528-4a6e70073346",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 2776,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2022
+    },
+    {
+      "id_securite": "ae16e715-5381-4a2b-987a-7164d72e2f31",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 2546,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2023
+    },
+    {
+      "id_securite": "215b7f72-5982-43da-8208-bef5a8b414a1",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "trafic de stupéfiants",
+      "nombre_infraction": 2684,
+      "type_infraction_1": "trafic de stupéfiants",
+      "annee": 2024
+    }
+  ],
+  "vols dans les véhicules": [
+    {
+      "id_securite": "943f4a2e-6354-4645-b089-6af2bf311fde",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 18537,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2016
+    },
+    {
+      "id_securite": "659acd72-305c-47c1-87d6-a44ab7917660",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 19662,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2017
+    },
+    {
+      "id_securite": "f93c73e3-02c5-480a-b92e-4eec3a7b295d",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 20569,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2018
+    },
+    {
+      "id_securite": "4d0bf411-f536-488c-b097-cdf2f2d49c5e",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 22124,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2019
+    },
+    {
+      "id_securite": "720f1361-d06a-4d21-88da-7d648d95091a",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 18393,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2020
+    },
+    {
+      "id_securite": "e8a5b30f-43de-42bb-9b8b-bc1a254d33b2",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 18011,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2021
+    },
+    {
+      "id_securite": "e40b35eb-c546-4f04-91d8-b4862f8dfe2b",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 18545,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2022
+    },
+    {
+      "id_securite": "6e326c79-a909-4ee6-8be3-9bf7dec45a59",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 22275,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2023
+    },
+    {
+      "id_securite": "48a5263c-f01f-4cce-b4a0-be00c5298e83",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols dans les véhicules",
+      "nombre_infraction": 20501,
+      "type_infraction_1": "vols dans les véhicules",
+      "annee": 2024
+    }
+  ],
+  "vols sans violence contre des personnes": [
+    {
+      "id_securite": "138df0dc-4c6c-4b6f-9502-d467dc70f41a",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 50577,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2016
+    },
+    {
+      "id_securite": "cf498248-fbd5-4106-af51-055519f2dc0c",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 51902,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2017
+    },
+    {
+      "id_securite": "c5132b97-ee27-42f0-85a8-773f3d54cc0a",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 49676,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2018
+    },
+    {
+      "id_securite": "461b825e-19b3-4d2a-8a79-efa8606090c1",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 49447,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2019
+    },
+    {
+      "id_securite": "326d99c2-a204-46ea-90cd-3e8080e7d32b",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 37141,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2020
+    },
+    {
+      "id_securite": "cea572ea-658f-46ef-9a60-a65f4fa57262",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 39631,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2021
+    },
+    {
+      "id_securite": "5c05c245-318f-47c2-8b1c-d5a240739b0a",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 45586,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2022
+    },
+    {
+      "id_securite": "537c2287-3170-457f-8bc1-d699427c6e57",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 45240,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2023
+    },
+    {
+      "id_securite": "4108a893-cb62-4583-ace0-eec3d8063de6",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols sans violence contre des personnes",
+      "nombre_infraction": 44171,
+      "type_infraction_1": "vols sans violence contre des personnes",
+      "annee": 2024
+    }
+  ],
+  "vols de véhicules": [
+    {
+      "id_securite": "664338e6-32f9-432f-85bf-76c599d0b9d3",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9735,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2016
+    },
+    {
+      "id_securite": "4994cae2-960f-4dd6-84da-b78f550415c2",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9499,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2017
+    },
+    {
+      "id_securite": "a6403a2b-c816-48a2-b7a5-1e1e35690254",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9143,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2018
+    },
+    {
+      "id_securite": "f298b001-fcfd-4868-bc77-4b926b13a6a7",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9352,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2019
+    },
+    {
+      "id_securite": "6c7ad108-1728-4962-aec4-8f5537362003",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 8372,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2020
+    },
+    {
+      "id_securite": "15278de7-8cbb-4cb0-a8ea-d16a1cf01897",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 8007,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2021
+    },
+    {
+      "id_securite": "c93476bc-0f82-4f3a-9048-1bdbc7762233",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9139,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2022
+    },
+    {
+      "id_securite": "850a7f6b-02d8-4e12-85b2-a996ff7d4269",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9925,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2023
+    },
+    {
+      "id_securite": "7c555f38-caa3-4b01-b9d1-d0e1bee15335",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols de véhicules",
+      "nombre_infraction": 9121,
+      "type_infraction_1": "vols de véhicules",
+      "annee": 2024
+    }
+  ],
+  "violences sexuelles": [
+    {
+      "id_securite": "b9596d12-19dc-487b-8bf0-230ebc23a091",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 4491,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2016
+    },
+    {
+      "id_securite": "fcb763b4-d264-47d9-a1d1-052285db59e5",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 4947,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2017
+    },
+    {
+      "id_securite": "18b196b3-5c60-4e64-8c09-c34f9402ba62",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 5630,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2018
+    },
+    {
+      "id_securite": "45eaec07-a17c-4aed-987f-e8df640ae41b",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 6471,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2019
+    },
+    {
+      "id_securite": "8e614d13-e6db-44dd-921c-471a270c6a27",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 7192,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2020
+    },
+    {
+      "id_securite": "cb28f140-5921-4874-a72f-def34048b80b",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 8927,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2021
+    },
+    {
+      "id_securite": "ed0d8478-3b7c-4e01-92cf-385a7c55ec39",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 9703,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2022
+    },
+    {
+      "id_securite": "6660beec-bb95-4ff0-a1b7-fab52a833619",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 10926,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2023
+    },
+    {
+      "id_securite": "89ede085-efa2-45ad-94a8-15dbedf3770f",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "violences sexuelles",
+      "nombre_infraction": 11529,
+      "type_infraction_1": "violences sexuelles",
+      "annee": 2024
+    }
+  ],
+  "cambriolages de logement": [
+    {
+      "id_securite": "ceed5e90-e237-4a23-bc12-1c936b8fac5e",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 19518,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2016
+    },
+    {
+      "id_securite": "28d4a031-ca69-43b6-8e2c-f39e46a4498c",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 21874,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2017
+    },
+    {
+      "id_securite": "3528a6f0-1afc-4d5b-a46b-79d28571fac7",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 19662,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2018
+    },
+    {
+      "id_securite": "8c3102fe-5b6a-442a-a997-995ece8e354b",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 20014,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2019
+    },
+    {
+      "id_securite": "6d7cb654-aae3-4ffa-af67-cb95747538f0",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 17859,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2020
+    },
+    {
+      "id_securite": "6d13317d-a4c3-43db-873b-1a69f5e18d66",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 17906,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2021
+    },
+    {
+      "id_securite": "fb6cc09e-d308-45e3-a3e0-9455020d3bc1",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 19605,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2022
+    },
+    {
+      "id_securite": "50f7a1a6-8821-4670-a8fa-f9e0d7ef675d",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 20481,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2023
+    },
+    {
+      "id_securite": "610f8640-d237-48c7-885f-512559bb2c85",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "cambriolages de logement",
+      "nombre_infraction": 21502,
+      "type_infraction_1": "cambriolages de logement",
+      "annee": 2024
+    }
+  ],
+  "vols avec armes": [
+    {
+      "id_securite": "92e6cd6c-735d-4b54-a454-c9b6a4b56fa5",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 368,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2016
+    },
+    {
+      "id_securite": "2eb82589-0c97-4f61-8d11-cd4f539d4177",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 366,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2017
+    },
+    {
+      "id_securite": "cc1bccb7-64ed-45fb-95cb-39cd02e055b9",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 365,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2018
+    },
+    {
+      "id_securite": "e6ac1281-7d01-442c-9eac-8e204c268652",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 326,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2019
+    },
+    {
+      "id_securite": "7e2b6e69-93ae-4298-b2a4-9cb89a93dc2c",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 402,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2020
+    },
+    {
+      "id_securite": "06f160ac-e6a5-4e0b-abe0-1e7fa05ee7d4",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 364,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2021
+    },
+    {
+      "id_securite": "51bb757f-ce9a-4813-89d6-200dbf56aa5e",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 357,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2022
+    },
+    {
+      "id_securite": "d75c5950-7545-467e-9530-61199d5061f6",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 403,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2023
+    },
+    {
+      "id_securite": "9cfd32d5-f862-4cbd-a3cb-1e2b23abf555",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "vols avec armes",
+      "nombre_infraction": 353,
+      "type_infraction_1": "vols avec armes",
+      "annee": 2024
+    }
+  ],
+  "tentatives d'homicides": [
+    {
+      "id_securite": "ee85ef6d-cf65-4f87-8ddb-35fa71c8fd32",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 108,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2016
+    },
+    {
+      "id_securite": "2d53dd75-81ef-42e9-8477-18178ae546f1",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 103,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2017
+    },
+    {
+      "id_securite": "5814db04-e7bc-4aac-9110-dc2b5887c5a4",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 136,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2018
+    },
+    {
+      "id_securite": "13506eee-eec4-4c5c-a1c9-a41c7171cc3e",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 155,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2019
+    },
+    {
+      "id_securite": "a5559ede-632c-4e6a-a310-db7f69a716f1",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 228,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2020
+    },
+    {
+      "id_securite": "04296660-1818-4d4b-80e2-99ef9efbab11",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 253,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2021
+    },
+    {
+      "id_securite": "dc15e8aa-18c6-4619-b281-065bb8d0e99d",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 235,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2022
+    },
+    {
+      "id_securite": "7e2520c6-7c51-4cca-a326-d51aa55ca3cf",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 228,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2023
+    },
+    {
+      "id_securite": "52ef6b3d-1e4c-4345-b3c4-f9402825d3e9",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "tentatives d'homicides",
+      "nombre_infraction": 188,
+      "type_infraction_1": "tentatives d'homicides",
+      "annee": 2024
+    }
+  ],
+  "coups et blessures volontaires intrafamiliaux": [
+    {
+      "id_securite": "385429b9-e1d2-4ef9-8173-f1a79765c0dc",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 6633,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2016
+    },
+    {
+      "id_securite": "37d1625a-a282-49b1-a76b-c911484bb626",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 6748,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2017
+    },
+    {
+      "id_securite": "5ea869c1-6b9c-4e5d-85c8-f815291b0be7",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 7457,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2018
+    },
+    {
+      "id_securite": "a6656950-15ef-443b-be8b-c59c97afff97",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 8624,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2019
+    },
+    {
+      "id_securite": "81bccfa2-c1cb-4692-82a1-349040774f8f",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 9773,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2020
+    },
+    {
+      "id_securite": "3d0248a5-b630-45bc-af8d-0e277d7b0acd",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 12126,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2021
+    },
+    {
+      "id_securite": "95537fb2-4f3c-4cb5-9e34-e9c625012724",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 14206,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2022
+    },
+    {
+      "id_securite": "97a17f30-39c1-4332-92cd-2b040fd8f313",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 15160,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2023
+    },
+    {
+      "id_securite": "2d0155db-1337-42db-94df-8620a0fdf203",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "coups et blessures volontaires intrafamiliaux",
+      "nombre_infraction": 15079,
+      "type_infraction_1": "coups et blessures volontaires intrafamiliaux",
+      "annee": 2024
+    }
+  ],
+  "coups et blessures volontaires": [
+    {
+      "id_securite": "ac7df425-d825-41b5-9a30-2c3aa272b09f",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 14871,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2016
+    },
+    {
+      "id_securite": "fd517eb6-070e-439d-b3f0-8e373df574f7",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 15526,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2017
+    },
+    {
+      "id_securite": "f0f4ab62-39c9-4f3f-a098-d09daab77961",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 16749,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2018
+    },
+    {
+      "id_securite": "c7aaefa3-6d27-4189-9284-89853a2a8e1d",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 18381,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2019
+    },
+    {
+      "id_securite": "4316ce4b-4fdd-4350-b841-225639125c35",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 18785,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2020
+    },
+    {
+      "id_securite": "b6369060-3154-4880-b2ab-c5b7243f4e8a",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 21490,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2021
+    },
+    {
+      "id_securite": "968012b6-f0c3-4496-ae05-84346f1eb293",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 25387,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2022
+    },
+    {
+      "id_securite": "96d373a2-2fda-405e-bb4a-3bf75e554d41",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 26387,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2023
+    },
+    {
+      "id_securite": "e20f32e5-b844-40c6-b2ec-d5aef5641535",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "coups et blessures volontaires",
+      "nombre_infraction": 26172,
+      "type_infraction_1": "coups et blessures volontaires",
+      "annee": 2024
+    }
+  ],
+  "usage de stupéfiants": [
+    {
+      "id_securite": "5ec46bbc-8bc6-4f6a-ae80-9fef457974f9",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 11695,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2016
+    },
+    {
+      "id_securite": "3966dd68-f392-46bc-a900-de505f03dfaa",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 12645,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2017
+    },
+    {
+      "id_securite": "85d257e1-d75f-4fb6-8ae4-b8b6910fd10e",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 12290,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2018
+    },
+    {
+      "id_securite": "9d695822-394a-4e30-96bc-20e30c7e0642",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 12046,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2019
+    },
+    {
+      "id_securite": "2aa55fe5-67f9-4e55-b1c7-be4805803663",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 10513,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2020
+    },
+    {
+      "id_securite": "25b5688d-4713-4623-8edf-200da5d2f0ab",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 12829,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2021
+    },
+    {
+      "id_securite": "06b9ccbb-cb7f-40d8-bd5e-712373f4fb75",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 13723,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2022
+    },
+    {
+      "id_securite": "69c43e4e-2075-4220-8b2f-5a07d9021e7e",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 14657,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2023
+    },
+    {
+      "id_securite": "8dd5e88f-ad52-47b1-9775-e90a0bb001c5",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "usage de stupéfiants",
+      "nombre_infraction": 15991,
+      "type_infraction_1": "usage de stupéfiants",
+      "annee": 2024
+    }
+  ],
+  "autres coups et blessures volontaires": [
+    {
+      "id_securite": "a685346f-486f-44b4-affd-f1ddd2fb6066",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 8238,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2016
+    },
+    {
+      "id_securite": "f2cc724d-a2f3-4c29-80c7-0abc03b80527",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 8778,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2017
+    },
+    {
+      "id_securite": "41f0797b-efca-4ac0-829d-10696920a35d",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 9292,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2018
+    },
+    {
+      "id_securite": "4417872d-faf7-47bb-a6f5-97a665b222d8",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 9757,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2019
+    },
+    {
+      "id_securite": "5a626937-68a5-4aff-ad46-8e2641293e9c",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 9012,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2020
+    },
+    {
+      "id_securite": "65b0a0a2-6e0a-41a7-9853-55e38d71a94a",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 9364,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2021
+    },
+    {
+      "id_securite": "dd63987f-c99c-48c0-af5b-43ee51cb5d0b",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 11181,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2022
+    },
+    {
+      "id_securite": "1b35d21c-4ca9-49b6-b21c-73d81179d65a",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 11227,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2023
+    },
+    {
+      "id_securite": "ecb56d08-161c-4f76-812a-9786533613ff",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "autres coups et blessures volontaires",
+      "nombre_infraction": 11093,
+      "type_infraction_1": "autres coups et blessures volontaires",
+      "annee": 2024
+    }
+  ],
+  "homicides": [
+    {
+      "id_securite": "1174c847-c150-450a-93c3-718da5700073",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "homicides",
+      "nombre_infraction": 66,
+      "type_infraction_1": "homicides",
+      "annee": 2016
+    },
+    {
+      "id_securite": "62a6d1e8-53ad-419a-b9c7-b3739cd7bfc6",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "homicides",
+      "nombre_infraction": 63,
+      "type_infraction_1": "homicides",
+      "annee": 2017
+    },
+    {
+      "id_securite": "45bdf8aa-3eb8-4da6-930c-a6fc68191837",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "homicides",
+      "nombre_infraction": 60,
+      "type_infraction_1": "homicides",
+      "annee": 2018
+    },
+    {
+      "id_securite": "5820c436-b3cc-4c37-a946-9b8afec191f9",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "homicides",
+      "nombre_infraction": 64,
+      "type_infraction_1": "homicides",
+      "annee": 2019
+    },
+    {
+      "id_securite": "2bebd3fc-93c3-442a-bc87-86e90cc80b63",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "homicides",
+      "nombre_infraction": 72,
+      "type_infraction_1": "homicides",
+      "annee": 2020
+    },
+    {
+      "id_securite": "b9d7b06d-43d8-473f-ab62-bf3bae7edf1e",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "homicides",
+      "nombre_infraction": 65,
+      "type_infraction_1": "homicides",
+      "annee": 2021
+    },
+    {
+      "id_securite": "810b631e-9bbe-49ae-aebf-65e9053033de",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "homicides",
+      "nombre_infraction": 63,
+      "type_infraction_1": "homicides",
+      "annee": 2022
+    },
+    {
+      "id_securite": "8a684150-449c-4b9f-8a78-5d2b78850676",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "homicides",
+      "nombre_infraction": 68,
+      "type_infraction_1": "homicides",
+      "annee": 2023
+    },
+    {
+      "id_securite": "1486f6e0-7eb2-4aed-8444-897501e23ab1",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "homicides",
+      "nombre_infraction": 58,
+      "type_infraction_1": "homicides",
+      "annee": 2024
+    }
+  ],
+  "escroqueries": [
+    {
+      "id_securite": "b107f233-01f4-4877-a2b8-7f594050b770",
+      "id_temps": "504da9e7-4a2e-4931-9fca-7b4d1d5a7a7e",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 19097,
+      "type_infraction_1": "escroqueries",
+      "annee": 2016
+    },
+    {
+      "id_securite": "8b9417c8-67bc-4069-82c2-01b3cf6d8091",
+      "id_temps": "81ac31ed-31b1-4d24-906e-8015b3001dbe",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 19882,
+      "type_infraction_1": "escroqueries",
+      "annee": 2017
+    },
+    {
+      "id_securite": "990e66de-9b21-4a69-9403-59418ccfa13d",
+      "id_temps": "567c4003-2096-453a-8d21-01e126611335",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 21211,
+      "type_infraction_1": "escroqueries",
+      "annee": 2018
+    },
+    {
+      "id_securite": "fb3df431-e2fb-4fe4-b6fe-ac7507834f07",
+      "id_temps": "bc17a1b6-b68b-49ad-8a48-ca0ec90a0864",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 22992,
+      "type_infraction_1": "escroqueries",
+      "annee": 2019
+    },
+    {
+      "id_securite": "21bc3b2f-a885-480c-89f1-3aa9a5dad5a9",
+      "id_temps": "d29033f4-ef59-45b6-b869-fc8986e22d48",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 25472,
+      "type_infraction_1": "escroqueries",
+      "annee": 2020
+    },
+    {
+      "id_securite": "5eab0c42-b4d5-45d5-b154-67eecb412d4a",
+      "id_temps": "133d6a75-fab7-45a1-b922-758de5379362",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 29615,
+      "type_infraction_1": "escroqueries",
+      "annee": 2021
+    },
+    {
+      "id_securite": "662d621e-b6c6-41c9-9583-e85adc618ad5",
+      "id_temps": "f2cfc8d8-f255-43f0-b8a6-eebce20ee41b",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 33403,
+      "type_infraction_1": "escroqueries",
+      "annee": 2022
+    },
+    {
+      "id_securite": "7ec39c8f-0e7f-420a-bde4-68e020b47cad",
+      "id_temps": "e3b4ff8e-f14e-42d0-8ea0-f29e55990e78",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 35906,
+      "type_infraction_1": "escroqueries",
+      "annee": 2023
+    },
+    {
+      "id_securite": "586205f4-049f-4d56-a136-4df46bfa6092",
+      "id_temps": "203147df-f9bb-4049-85ba-8f89d04eef2f",
+      "type_infraction": "escroqueries",
+      "nombre_infraction": 35687,
+      "type_infraction_1": "escroqueries",
+      "annee": 2024
+    }
+  ]
+}
