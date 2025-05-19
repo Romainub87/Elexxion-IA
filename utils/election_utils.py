@@ -4,6 +4,9 @@ from utils.indicators_utils import getCAC40perYear, getPollutionByYear, getResul
     getTypeElection, getPopulationByYear, getTourElection
 from utils.securite_utils import getSecuriteByYearAndType
 
+from functools import lru_cache
+
+@lru_cache(maxsize=1)
 def getAllDataWhereElectionPerYear():
     data_cac40 = getCAC40perYear()
     data_chomage = getChomagePerYear()
