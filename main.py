@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from utils.election_utils import getCandidatsClassementEtLabelEncoder
-from sklearn.metrics import accuracy_score, mean_absolute_error
+from sklearn.metrics import mean_absolute_error
 
 app = Flask(__name__)
 
@@ -282,4 +282,4 @@ def index():
     return description, 200, {'Content-Type': 'text/html'}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, ssl_context=('cert.pem', 'key.pem'))
